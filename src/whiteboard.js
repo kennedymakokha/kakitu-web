@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Document, Page } from 'react-pdf';
 import PDf from './img/Whitepaper.pdf'
 import Nav from './Layouts/Nav';
 
