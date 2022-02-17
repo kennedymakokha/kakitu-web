@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
 // import Contact from './contact';
 import Home from './home';
-import Whiteboard from './whiteboard';
+// import Whiteboard from './whiteboard';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />}></Route>
         {/* <Route path="/contact_us" exact element={<Contact />} > </Route> */}
-        <Route path="/whiteboard" exact element={<Whiteboard />} > </Route>
+        {/* <Route path="/whiteboard" exact element={<Whiteboard />} > </Route> */}
       </Routes>
     </BrowserRouter>
   );
