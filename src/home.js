@@ -11,10 +11,12 @@ import { Link } from 'react-router-dom';
 import Footer from "./common/footer";
 import Playstore from './img/playstore.png';
 
+import Video from './v.mp4'
+import { useEffect, useState } from "react";
 function Values(props) {
 
     return (
-        
+
         <div className=" flex flex-col justify-center items-center py-10 ">
             {/* className="border-2 border-base-400 content-center flex justify-items-center items-center rounded-full  */}
             <div >
@@ -30,6 +32,14 @@ function Values(props) {
 
 
 function Home() {
+
+    const [authenting, changeAuth] = useState(false)
+
+    useEffect(() => {
+
+        changeAuth(true)
+
+    })
     return (
         <div className="font-Open">
             <div className="relative flex flex-col  bg-base-500 bg-hero-pattern bg-no-repeat ">
@@ -37,18 +47,25 @@ function Home() {
                     <div className="max-w-7xl mx-auto px-4 md:px-0">
                         <Nav />
 
-                        <div className="flex flex-1  flex-col md:py-24  justify-center ">
-                            <h1 className="text-white md:text-6xl text-center md:text-justify text-3xl font-light">Digital money for the modern world</h1>
-                            <div className="flex flex-1  flex-col items-center justify-center w-3/4  mx-auto  ">
-                                <div className="my-14 md:flex hidden flex-row">
-                                    <button className="capitalize text-white focus:outline-none px-8 py-3 border-t border-b border-black border-r border-l rounded-l-full flex-row flex">
-                                        <img src={Playstore} alt="" height="30px" width="30px" /><p className="text-center hover:text-black pt-1">Play Store </p>
-                                    </button>
+                        <div className="flex  pb-20">
+                            {/* <h1 className="text-white md:text-6xl text-center md:text-justify text-3xl font-light">Digital money for the modern world</h1> */}
+                            <div className="flex flex-row w-full  mx-auto  ">
 
-                                    <button className="capitalize text-white focus:outline-none px-8 py-3 border-t border-b border-black border-r rounded-r-full flex-row flex">
-                                        <SocialTab Name={FaAppStoreIos} color="text-appStore-600" hcolor={`text-black`} /><p className="text-center hover:text-black pt-1">App Store</p>
-                                    </button>
+                                <div className="w-1/3 flex justify-center items-center flex-col">
+                                    <h2 className="text-white text-2xl font-Montserrat ">Mpesa based Crypto Currency</h2>
+                                    <p>Kakitu Securities Ltd</p>
+                                    <p>Ladies and gentlemen </p>
+
                                 </div>
+
+                                <div className="w-2/3">
+                                    <div className="video-responsive ">
+                                        {authenting ? <video autoPlay={true} muted loop className="w-full" height="240" >
+                                            <source src={Video} type="video/mp4" />
+                                        </video> : null}
+                                    </div>
+                                </div>
+
                             </div>
                             <div className="my-14 md:hidden flex flex-col">
 

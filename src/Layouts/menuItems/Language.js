@@ -44,12 +44,10 @@ export function Start(props) {
                         <Link to={props.url ? props.url : "/"} className="hover:text-current hover:no-underline"> {props.name}</Link>
                         {active ? (
                             <ArrowactiveIcon
-
                                 aria-hidden="true"
                             />
                         ) : (
                             <ArrowactiveIcon
-
                                 aria-hidden="true"
                             />
                         )}
@@ -70,16 +68,13 @@ export function Foundation(props) {
                         className={`${active ? ' flex justify-between text-1xl text-white  text-sm' : 'text-base-600 flex justify-between'
                             } group flex rounded-md items-center w-full px-2 py-2 text-sm `}
                     >
-
-                        {props.name}
+                        <a href={props.url} target="blank">{props.name}</a>
                         {active ? (
-                            <FaundationInactiveIcon
-
+                             props.icon ? props.icon : <FaundationInactiveIcon
                                 aria-hidden="true"
                             />
                         ) : (
-                            <FaundationInactiveIcon
-
+                            props.icon ? props.icon : <FaundationInactiveIcon
                                 aria-hidden="true"
                             />
                         )}
