@@ -53,8 +53,8 @@ function Home() {
 
                                 <div className="w-1/3 md:flex hidden justify-center items-center flex-col">
                                     <h2 className="text-white text-2xl font-Montserrat ">Mpesa based Crypto Currency</h2>
-                                    <p>Kakitu Securities Ltd</p>
-                                    <p>Ladies and gentlemen </p>
+                                    <p className=" italic"> Kakitu Securities Ltd</p>
+                                    {/* <p>Ladies and gentlemen </p> */}
 
                                 </div>
 
