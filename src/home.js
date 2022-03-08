@@ -51,14 +51,14 @@ function Home() {
                             {/* <h1 className="text-white md:text-6xl text-center md:text-justify text-3xl font-light">Digital money for the modern world</h1> */}
                             <div className="flex flex-row w-full  mx-auto  ">
 
-                                <div className="w-1/3 flex justify-center items-center flex-col">
+                                <div className="w-1/3 md:flex hidden justify-center items-center flex-col">
                                     <h2 className="text-white text-2xl font-Montserrat ">Mpesa based Crypto Currency</h2>
                                     <p>Kakitu Securities Ltd</p>
                                     <p>Ladies and gentlemen </p>
 
                                 </div>
 
-                                <div className="w-2/3">
+                                <div className="md:w-2/3 w-full">
                                     <div className="video-responsive ">
                                         {authenting ? <video autoPlay={true} muted loop className="w-full" height="240" >
                                             <source src={Video} type="video/mp4" />
@@ -67,19 +67,7 @@ function Home() {
                                 </div>
 
                             </div>
-                            <div className="my-14 md:hidden flex flex-col">
-
-                                <button className=" capitalize text-white focus:outline-none px-10 py-3 my-2 border-t border-b border-black order-l rounded-l-full border-r rounded-r-full flex flex-row">
-                                    {/* <SocialTab Name={AiFillAndroid} color='text-white' hcolor={`text-android`} /> <p className="text-center pt-1">android  App</p> */}
-                                    <img src={Playstore} alt="" height="30px" width="30px" /> <p className="text-center pt-1">Play Store </p>
-                                </button>
-                                {/* <button className=" capitalize text-white focus:outline-none px-10 py-3 my-2 border-t border-b border-black order-l rounded-l-full border-r rounded-r-full flex flex-row">
-                                <img src={Playstore} alt="" height="30px" width="30px" /> <p className="text-center pt-1">Play Store </p>
-                                </button> */}
-                                <button className=" capitalize text-white focus:outline-none px-10 py-3 my-2 border-t border-b border-black order-l rounded-l-full border-r rounded-r-full flex flex-row">
-                                    <SocialTab Name={FaAppStoreIos} color='text-appStore-600' hcolor={`text-black`} /> <p className="text-center pt-1">App Store</p>
-                                </button>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
