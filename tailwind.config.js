@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('assets/bgshape.png')",
+        'bg': "url('assets/bg.jpg')",
       },
       colors: {
         'base': {

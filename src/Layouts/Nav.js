@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { Foundation, Start } from './menuItems/Language';
 function Nav(props) {
     return (
-        <div className="flex font-Open flex-row justify-start gap-x-5 items-center py-0 bg-base-600">
+        <div className="flex font-Open flex-row justify-start  items-center py-0 bg-base-300">
             <div className="md:items-start items-center flex flex-row">
                 <Link to="/">
                     <img src={Logo} alt="" height={100} width={100} />

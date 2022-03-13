@@ -44,82 +44,15 @@ function Home() {
     }, [])
     return (
         <div className="font-Open">
-            <div className="relative flex flex-col  bg-base-500 bg-hero-pattern bg-no-repeat ">
+            <div className="relative flex flex-col  bg-bg bg-no-repeat ">
                 <div className="w-full">
                     <div className="max-w-7xl mx-auto px-4 md:px-0">
                         <Nav />
 
-                        <div className="flex  pb-20">
+                        <div className="flex h-screen">
                             {/* <h1 className="text-white md:text-6xl text-center md:text-justify text-3xl font-light">Digital money for the modern world</h1> */}
-                            <div className="flex flex-row w-full  mx-auto group  ">
-                                <div className="w-2/3 flex-col pt-10 ">
-                                    <h1 className="text-3xl  text-gray-100 underline text-center"> Best crypto Trader</h1>
-                                    <p className="text-center"> Kakitu Securities LTD</p>
+                            <div className="flex flex-row w-full  mx-auto group min-h-screen ">
 
-                                    {!download ? <div className="text-gray-100 text-center text-xl">
-                                        <Typewriter
-                                            options={{
-
-                                                autoStart: true,
-
-                                                delay: 60
-                                            }}
-                                            onInit={(typewriter) => {
-                                                typewriter.typeString(' Ladies and Gentlemen, the  day you have all been waiting for. We have finished the development of the M-PESA  based Crypto currency, and the best  thing it can do is crash.')
-                                                    .callFunction(() => {
-                                                        // console.log('String typed out!');
-                                                        setDownload(true)
-                                                    })
-
-                                                    .pauseFor(2500)
-                                                    // .deleteAll()
-                                                    .callFunction(() => {
-                                                        console.log('All strings were deleted');
-                                                    })
-                                                    .start();
-                                            }}
-                                        />
-                                    </div> : <div className="flex justify-center items-center text-gray-100 text-xl ">
-                                        <ul className=" list-decimal">
-                                            <li>	Download the app today: https://bit.ly/kakitu</li>
-                                            <li>	Join the Kakitu Telegram Channel for instructions (https://t.me/kakitucurrency)</li>
-                                            <li>	Transact using the app, until the value of the trade crashes.</li>
-                                            <li>	Take home winnings no need for a salary start small and think big.</li>
-
-                                        </ul>
-                                    </div>}
-                                    <p className="p-2">
-
-                                    </p>
-                                    {done ? <p className=" text-xl text-white">
-                                        if you are interested with the coin crashingm we will be using the formula
-                                        <Typewriter
-                                            options={{
-                                                autoStart: true,
-                                                delay: 60
-                                            }}
-                                            onInit={(typewriter) => {
-                                                typewriter.typeString('value of coin = (market cap / total supply)] \nwhatever is on the M-PESA that time can withdraw whatever they want until there is no more float in the PayBill.\n The default is at level 1 \n market cap = 1000 total supply = 1000 (winner gets 2000), level 2 : market cap = 10000 total supply = 10000 (winner gets 20000), level 3 : market cap = 100000 total supply = 100000 (winner gets 200000), level 4 : market cap = 1000000 total supply = 1000000 (winner gets 2000000), level 5 : market cap = 10000000 ')
-                                                    .callFunction(() => {
-                                                        // console.log('String typed out!');
-                                                        changeDone(true)
-                                                    })
-
-                                                    .pauseFor(2500)
-                                                    // .deleteAll()
-                                                    .callFunction(() => {
-                                                        console.log('All strings were deleted');
-                                                    })
-                                                    .start();
-                                            }}
-                                        />
-                                    </p> : null}
-                                </div>
-
-                                <div className="md:w-1/3 w-full  ">
-                                    <img className="animate-fade" src={App} alt="" />
-
-                                </div>
 
                             </div>
 
